@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+.content-profile{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+}
+.content-profile-a{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 550px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px rgb(201, 199, 199);
+   
+}
+.profile-tile{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    
+}
+.profile-chitiet{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.profile-chitiet{
+    width: 90%;
+    height: 90%;
+}
+.profile-input-img{
+    display: flex;
+align-items: center;
+justify-content: center;    
+    width: 100%;
+    height: 20%;
+   
+}
+.profile-input-img img{
+    width: 50%;
+    height: 100%;
+}
+.profile-input{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50px;
+   
+}
+
+.profile-input p{
+    width: 100%;
+}
+.profile-input input{
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid rgb(128, 125, 125);
+}
+.profile-btn{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    width:200px;
+}
+.profile-btn button,
+.profile-btn .profile-btn-cancel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   height: 100%;
+   width: 80px;
+   background: #333;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.profile-btn-cancel a{
+color:  #fff;
+    text-decoration: none;
+}
+.profile-btn button:hover,
+.profile-btn .profile-btn-cancel:hover{
+    background: rgb(88, 88, 88);
+}

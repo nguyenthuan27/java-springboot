@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="layout" template="/WEB-INF/views/admin/layout-admin/index.jsp">
+		<put-attribute name="sidebar" value="/WEB-INF/views/admin/layout-admin/_sidebar.jsp" />
+		<put-attribute name="body"  value=""/>
+		<put-attribute name="nav" value="/WEB-INF/views/admin/layout-admin/_nav.jsp" />
+	</definition>
+	<definition name="home-admin/*" extends="layout">
+		<put-attribute name="body" value="/WEB-INF/views/admin/home-admin/{1}.jsp" />
+	</definition>
+	
+	
+	<definition name="layout-trangchu" template="/WEB-INF/views/customer/layout/index.jsp">
+		<put-attribute name="menu" value="/WEB-INF/views/customer/layout/_menu.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/customer/layout/_footer.jsp" />
+		<put-attribute name="body-trangchu"  value=""/>
+	</definition>
+	<definition name="home/*" extends="layout-trangchu">
+		<put-attribute name="body-trangchu" value="/WEB-INF/views/customer/home/{1}.jsp" />
+	</definition>
+</tiles-definitions>
